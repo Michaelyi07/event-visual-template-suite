@@ -1,0 +1,1057 @@
+{
+ "poster_vertical_1080x1920_t10": {
+  "template": "poster_vertical_1080x1920",
+  "size": [
+   1080,
+   1920
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 106,
+    "avail_h": 330,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/poster_vertical_1080x1920_t10.png",
+  "png_sha256": "2b0b9d3f2a293771fa16d21dedeeb841e6cc31197f4804c3a30ff36f5190e4f4"
+ },
+ "poster_vertical_1080x1920_t30": {
+  "template": "poster_vertical_1080x1920",
+  "size": [
+   1080,
+   1920
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 40,
+  "checks": {
+   "title_fit": {
+    "needed_h": 317,
+    "avail_h": 330,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 84,
+    "avail_h": 96,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/poster_vertical_1080x1920_t30.png",
+  "png_sha256": "9b3ca64905a11e52a49f9a1060ca701ef561d1680370b815658d0cff54c463ea"
+ },
+ "poster_square_1080x1080_t10": {
+  "template": "poster_square_1080x1080",
+  "size": [
+   1080,
+   1080
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 96,
+    "avail_h": 300,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 220,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/poster_square_1080x1080_t10.png",
+  "png_sha256": "a5792e84479a5d92a60f28ba025df76cc5b64c17a8d579611a2333436700f97f"
+ },
+ "poster_square_1080x1080_t30": {
+  "template": "poster_square_1080x1080",
+  "size": [
+   1080,
+   1080
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 40,
+  "checks": {
+   "title_fit": {
+    "needed_h": 288,
+    "avail_h": 300,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 67,
+    "avail_h": 84,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 220,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/poster_square_1080x1080_t30.png",
+  "png_sha256": "8713c035dc5425ab945a49b4070bc38fd3a0ecd6695bef898ea237ee37aad0d9"
+ },
+ "poster_horizontal_1920x1080_t10": {
+  "template": "poster_horizontal_1920x1080",
+  "size": [
+   1920,
+   1080
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 62,
+    "avail_h": 200,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/poster_horizontal_1920x1080_t10.png",
+  "png_sha256": "1ceb8d8b72ce05ca740628bdb2a328959027d6ec41c52959d503ebff7cabc868"
+ },
+ "poster_horizontal_1920x1080_t30": {
+  "template": "poster_horizontal_1920x1080",
+  "size": [
+   1920,
+   1080
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 40,
+  "checks": {
+   "title_fit": {
+    "needed_h": 187,
+    "avail_h": 200,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 67,
+    "avail_h": 96,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/poster_horizontal_1920x1080_t30.png",
+  "png_sha256": "d49f6be8d31721bdcc2412f8ed81b7eb4fdce676eacc21469226b097167f36f4"
+ },
+ "oa_cover_first_900x383_t10": {
+  "template": "oa_cover_first_900x383",
+  "size": [
+   900,
+   383
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 38,
+    "avail_h": 116,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/oa_cover_first_900x383_t10.png",
+  "png_sha256": "fdd86378ccdf23c36c48304dc8906e08fb6ab3f18207cd12546e8fe82ea094ea"
+ },
+ "oa_cover_first_900x383_t30": {
+  "template": "oa_cover_first_900x383",
+  "size": [
+   900,
+   383
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 40,
+  "checks": {
+   "title_fit": {
+    "needed_h": 115,
+    "avail_h": 116,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 45,
+    "avail_h": 46,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/oa_cover_first_900x383_t30.png",
+  "png_sha256": "f0f0ff7af4305071b8d6f81004e59850d987311dfc7f9665854a3de89e077384"
+ },
+ "oa_cover_second_200x200_t10": {
+  "template": "oa_cover_second_200x200",
+  "size": [
+   200,
+   200
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 53,
+    "avail_h": 134,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/oa_cover_second_200x200_t10.png",
+  "png_sha256": "8c4919575adc81cfd0f224fe8394eebed7d8480c21d04c5e59cc4b4a51ade697"
+ },
+ "oa_cover_second_200x200_t30": {
+  "template": "oa_cover_second_200x200",
+  "size": [
+   200,
+   200
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 132,
+    "avail_h": 134,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/oa_cover_second_200x200_t30.png",
+  "png_sha256": "58d2e23d82a754aa33169ce31ce9f8f610db149e371f75a484f8c172bdfb6b63"
+ },
+ "mp_cover_750x420_t10": {
+  "template": "mp_cover_750x420",
+  "size": [
+   750,
+   420
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 43,
+    "avail_h": 140,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/mp_cover_750x420_t10.png",
+  "png_sha256": "c00b04bafdad25f0a12c6afe07dcd0a0c67d61f077ef4f623d1b77e58def29c3"
+ },
+ "mp_cover_750x420_t30": {
+  "template": "mp_cover_750x420",
+  "size": [
+   750,
+   420
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 40,
+  "checks": {
+   "title_fit": {
+    "needed_h": 130,
+    "avail_h": 140,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 47,
+    "avail_h": 48,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/mp_cover_750x420_t30.png",
+  "png_sha256": "c88b921a62d73d1eff6abbe6d5e4f46712a202b542b045c64eb854670f179eda"
+ },
+ "podcast_cover_3000x3000_t10": {
+  "template": "podcast_cover_3000x3000",
+  "size": [
+   3000,
+   3000
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 264,
+    "avail_h": 840,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 400,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/podcast_cover_3000x3000_t10.png",
+  "png_sha256": "da033aeee0aa72f2a4d4ed5b6f3c8ba073a414412cbe641b63dc7af236c85c28"
+ },
+ "podcast_cover_3000x3000_t30": {
+  "template": "podcast_cover_3000x3000",
+  "size": [
+   3000,
+   3000
+  ],
+  "variant": "public",
+  "title_len": 30,
+  "subtitle_len": 40,
+  "checks": {
+   "title_fit": {
+    "needed_h": 792,
+    "avail_h": 840,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 202,
+    "avail_h": 220,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 400,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/stress/podcast_cover_3000x3000_t30.png",
+  "png_sha256": "eef02b10c87e43172a5123f4802edf4f3389026f6178888733b28b5e7b9ace13"
+ },
+ "poster_vertical_1080x1920_v_member-only": {
+  "template": "poster_vertical_1080x1920",
+  "size": [
+   1080,
+   1920
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 106,
+    "avail_h": 330,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/poster_vertical_1080x1920_v_member-only.png",
+  "png_sha256": "ae6c562041db379fc1bf8672eea97f9b0a92f51c998ea04bdd61ce1deef280c1"
+ },
+ "poster_vertical_1080x1920_v_closed-door": {
+  "template": "poster_vertical_1080x1920",
+  "size": [
+   1080,
+   1920
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 106,
+    "avail_h": 330,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/poster_vertical_1080x1920_v_closed-door.png",
+  "png_sha256": "b04013f6a48cf12254cce326c0973ad0afdadffbfa4e4eadd72ed1289b1e853f"
+ },
+ "poster_square_1080x1080_v_member-only": {
+  "template": "poster_square_1080x1080",
+  "size": [
+   1080,
+   1080
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 96,
+    "avail_h": 300,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 220,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/poster_square_1080x1080_v_member-only.png",
+  "png_sha256": "7b12197ce6676aae0071ee1cf2b71cc8469f99bf8420a26571ae9f80617f940a"
+ },
+ "poster_square_1080x1080_v_closed-door": {
+  "template": "poster_square_1080x1080",
+  "size": [
+   1080,
+   1080
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 96,
+    "avail_h": 300,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 220,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/poster_square_1080x1080_v_closed-door.png",
+  "png_sha256": "bb95a8f4290616c1b958fde61541f8bd6a1aa57293b8b9d7022bf7e8575578f4"
+ },
+ "poster_horizontal_1920x1080_v_member-only": {
+  "template": "poster_horizontal_1920x1080",
+  "size": [
+   1920,
+   1080
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 62,
+    "avail_h": 200,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/poster_horizontal_1920x1080_v_member-only.png",
+  "png_sha256": "a617b42bb23a62c16d391131f61a359aee2883e376a0807378486edf65ddd8b5"
+ },
+ "poster_horizontal_1920x1080_v_closed-door": {
+  "template": "poster_horizontal_1920x1080",
+  "size": [
+   1920,
+   1080
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 62,
+    "avail_h": 200,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/poster_horizontal_1920x1080_v_closed-door.png",
+  "png_sha256": "f0bc681301254025ed27e32f5e8e3dcf1853d279ebe1c6dbc1f1a9172d6fd60a"
+ },
+ "oa_cover_first_900x383_v_member-only": {
+  "template": "oa_cover_first_900x383",
+  "size": [
+   900,
+   383
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 38,
+    "avail_h": 116,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/oa_cover_first_900x383_v_member-only.png",
+  "png_sha256": "808d77ca399093ae6fd3a2e747d13471c844dd972c7ba8321872e58e51832aee"
+ },
+ "oa_cover_first_900x383_v_closed-door": {
+  "template": "oa_cover_first_900x383",
+  "size": [
+   900,
+   383
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 38,
+    "avail_h": 116,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/oa_cover_first_900x383_v_closed-door.png",
+  "png_sha256": "ff3968e83f417f807d50e680c25b05d85b60862f1ec602dbc73a311bf3952319"
+ },
+ "oa_cover_second_200x200_v_member-only": {
+  "template": "oa_cover_second_200x200",
+  "size": [
+   200,
+   200
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 26,
+    "avail_h": 134,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/oa_cover_second_200x200_v_member-only.png",
+  "png_sha256": "2199376d10628e8c2f91c9b2fe4017439e368540f86eda32b8286a243e54cb20"
+ },
+ "oa_cover_second_200x200_v_closed-door": {
+  "template": "oa_cover_second_200x200",
+  "size": [
+   200,
+   200
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 26,
+    "avail_h": 134,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/oa_cover_second_200x200_v_closed-door.png",
+  "png_sha256": "99e3e09f40e9dd8bbc3285a597bb80402725af0a0ee492c0a137e491d6eaf9a2"
+ },
+ "mp_cover_750x420_v_member-only": {
+  "template": "mp_cover_750x420",
+  "size": [
+   750,
+   420
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 43,
+    "avail_h": 140,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/mp_cover_750x420_v_member-only.png",
+  "png_sha256": "16fc60030e48fe810c10d24b1cea94076b877c44b4317971afdb7534ed641f5f"
+ },
+ "mp_cover_750x420_v_closed-door": {
+  "template": "mp_cover_750x420",
+  "size": [
+   750,
+   420
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 43,
+    "avail_h": 140,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/mp_cover_750x420_v_closed-door.png",
+  "png_sha256": "ae39f9a24b371b9c64d9e1d037d72172ec07d0169d77c8d1ce469d768f21c04a"
+ },
+ "podcast_cover_3000x3000_v_member-only": {
+  "template": "podcast_cover_3000x3000",
+  "size": [
+   3000,
+   3000
+  ],
+  "variant": "member-only",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 264,
+    "avail_h": 840,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 400,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/podcast_cover_3000x3000_v_member-only.png",
+  "png_sha256": "94c6edade70cacf633a1f8c2f079c4e843e4a2c496e69de8ff5a2ff8ddfdbd82"
+ },
+ "podcast_cover_3000x3000_v_closed-door": {
+  "template": "podcast_cover_3000x3000",
+  "size": [
+   3000,
+   3000
+  ],
+  "variant": "closed-door",
+  "title_len": 6,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 264,
+    "avail_h": 840,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 400,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/variants/podcast_cover_3000x3000_v_closed-door.png",
+  "png_sha256": "5533ccec7d6d0519e7e718b5ed31079699f64bb49e7dc0dd7499c40bf3d4fab1"
+ },
+ "poster_vertical_1080x1920_sample": {
+  "template": "poster_vertical_1080x1920",
+  "size": [
+   1080,
+   1920
+  ],
+  "variant": "public",
+  "title_len": 12,
+  "subtitle_len": 17,
+  "checks": {
+   "title_fit": {
+    "needed_h": 211,
+    "avail_h": 330,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 42,
+    "avail_h": 96,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/poster_vertical_1080x1920_sample.png",
+  "png_sha256": "f9759772d83899b2adad52f4c88a327ce8aab2cca0a36f97f863574987125f9b"
+ },
+ "poster_square_1080x1080_sample": {
+  "template": "poster_square_1080x1080",
+  "size": [
+   1080,
+   1080
+  ],
+  "variant": "member-only",
+  "title_len": 9,
+  "subtitle_len": 18,
+  "checks": {
+   "title_fit": {
+    "needed_h": 96,
+    "avail_h": 300,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 34,
+    "avail_h": 84,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 220,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/poster_square_1080x1080_sample.png",
+  "png_sha256": "976cfd53853d396b9934783ecfe9cfd6504f1016fd1e0fe7496c7ed0e0b10431"
+ },
+ "poster_horizontal_1920x1080_sample": {
+  "template": "poster_horizontal_1920x1080",
+  "size": [
+   1920,
+   1080
+  ],
+  "variant": "closed-door",
+  "title_len": 9,
+  "subtitle_len": 17,
+  "checks": {
+   "title_fit": {
+    "needed_h": 62,
+    "avail_h": 200,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 34,
+    "avail_h": 96,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 240,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/poster_horizontal_1920x1080_sample.png",
+  "png_sha256": "1dbc5ff2f053b621ff4cb815d9323ce333da6d69b84bff05549bdaa0083b63bf"
+ },
+ "oa_cover_first_900x383_sample": {
+  "template": "oa_cover_first_900x383",
+  "size": [
+   900,
+   383
+  ],
+  "variant": "public",
+  "title_len": 13,
+  "subtitle_len": 18,
+  "checks": {
+   "title_fit": {
+    "needed_h": 77,
+    "avail_h": 116,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 22,
+    "avail_h": 46,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/oa_cover_first_900x383_sample.png",
+  "png_sha256": "d1132966004d17e635b17b7676419c9b7f9fd6c8ddc38b3ec7532a154dbcc841"
+ },
+ "oa_cover_second_200x200_sample": {
+  "template": "oa_cover_second_200x200",
+  "size": [
+   200,
+   200
+  ],
+  "variant": "member-only",
+  "title_len": 9,
+  "subtitle_len": 0,
+  "checks": {
+   "title_fit": {
+    "needed_h": 53,
+    "avail_h": 134,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/oa_cover_second_200x200_sample.png",
+  "png_sha256": "e19ece66ed9bad87220f4899fb79c7bd0f0f8b9be041b24bfa0a7c1947ede0ca"
+ },
+ "mp_cover_750x420_sample": {
+  "template": "mp_cover_750x420",
+  "size": [
+   750,
+   420
+  ],
+  "variant": "public",
+  "title_len": 10,
+  "subtitle_len": 16,
+  "checks": {
+   "title_fit": {
+    "needed_h": 43,
+    "avail_h": 140,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 23,
+    "avail_h": 48,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 200,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/mp_cover_750x420_sample.png",
+  "png_sha256": "9b226bbc6a0bae8384189bb12acd8114a54cf72c211fa2cdb39e5641df1cfae5"
+ },
+ "podcast_cover_3000x3000_sample": {
+  "template": "podcast_cover_3000x3000",
+  "size": [
+   3000,
+   3000
+  ],
+  "variant": "closed-door",
+  "title_len": 8,
+  "subtitle_len": 19,
+  "checks": {
+   "title_fit": {
+    "needed_h": 264,
+    "avail_h": 840,
+    "ok": true
+   },
+   "subtitle_fit": {
+    "needed_h": 101,
+    "avail_h": 220,
+    "ok": true
+   },
+   "overlaps": {
+    "count": 0,
+    "pairs": []
+   },
+   "qr_slot": {
+    "edge": 400,
+    "ok": true
+   },
+   "inside_canvas": true
+  },
+  "pass": true,
+  "screenshot": "evidence/samples/podcast_cover_3000x3000_sample.png",
+  "png_sha256": "43e42c3e800946f82b6c89b041b686ff7349a98c14bacc2e1f63eac5b095ea2a"
+ }
+}

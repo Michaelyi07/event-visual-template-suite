@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-variant="public">
+<head>
+<meta charset="utf-8">
+<title>podcast_cover_3000x3000</title>
+<link rel="stylesheet" href="../tokens/tokens.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 3000px; height: 3000px; overflow: hidden; }
+body {
+  position: relative;
+  background: var(--color-neutral-0);
+  font: var(--type-meta);
+  color: var(--color-neutral-900);
+}
+.hero { position: absolute; overflow: hidden; border-radius: 24px;
+  background: linear-gradient(135deg, var(--color-brand-primary-700) 0%, var(--color-brand-primary-600) 62%, var(--color-brand-primary-500) 100%); }
+.hero .deco-1 { position: absolute; width: 520px; height: 520px; border-radius: 50%;
+  border: 14px solid var(--color-brand-accent-gold-500); opacity: .55; }
+.hero .deco-2 { position: absolute; width: 300px; height: 300px; border-radius: 50%;
+  background: var(--color-brand-primary-500); opacity: .35; }
+.hero .deco-3 { position: absolute; width: 640px; height: 640px; border-radius: 96px;
+  background: var(--color-neutral-0); opacity: .08; }
+#badge {
+  position: absolute; display: inline-flex; align-items: center;
+  padding: 20px 44px; border-radius: 999px;
+  background: var(--color-badge-public-bg);
+  color: var(--color-badge-public-text);
+  font: var(--type-badge-xl); letter-spacing: 2px; white-space: nowrap;
+}
+html[data-variant="member-only"] #badge { background: var(--color-badge-member-only-bg); color: var(--color-badge-member-only-text); }
+html[data-variant="closed-door"] #badge { background: var(--color-badge-closed-door-bg); color: var(--color-badge-closed-door-text); }
+.title-wrap { position: absolute; display: flex; flex-direction: column; justify-content: center; }
+#title {
+  font: var(--type-display-podcast);
+  color: var(--color-neutral-900);
+  width: 100%;
+  display: -webkit-box; -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; overflow: hidden;
+}
+.subtitle-wrap { position: absolute; }
+#subtitle {
+  font: var(--type-subtitle-podcast);
+  color: var(--color-neutral-700);
+  width: 100%;
+  display: -webkit-box; -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; overflow: hidden;
+}
+.meta {
+  position: absolute; font: var(--type-meta-podcast);
+  color: var(--color-neutral-700);
+}
+.meta b { color: var(--color-brand-primary-700); font-weight: 700; }
+.qr-slot {
+  position: absolute; border-radius: 16px;
+  background: var(--color-neutral-100);
+  border: 2px dashed var(--color-neutral-500);
+  display: flex; align-items: center; justify-content: center;
+}
+.qr-slot .qr-inner { width: 80%; height: 80%; border-radius: 8px;
+  background:
+    repeating-conic-gradient(var(--color-neutral-900) 0% 25%, var(--color-neutral-0) 0% 50%)
+    0 0 / 20px 20px;
+  opacity: .85; }
+.qr-slot .qr-label { position: absolute; bottom: -40px; left: 0; right: 0; text-align: center;
+  font: var(--type-meta-podcast); color: var(--color-neutral-500); }
+.logo-safe {
+  position: absolute; display: flex; align-items: center; gap: 12px;
+  color: var(--color-neutral-500); font: var(--type-logo-xl);
+  letter-spacing: 3px;
+}
+.logo-safe .logo-mark { width: 80px; height: 80px; border-radius: 20px;
+  background: var(--color-brand-primary-600); position: relative; }
+.logo-safe .logo-mark::after { content: ""; position: absolute; inset: 30%;
+  border-radius: 50%; background: var(--color-brand-accent-gold-500); }
+</style>
+</head>
+<body data-template="podcast_cover_3000x3000">
+<div class="hero" style="left:300px;top:300px;width:2400px;height:780px;">
+  <div class="deco-1" style="left:1560px;top:60px;"></div>
+  <div class="deco-2" style="left:1900px;top:420px;"></div>
+  <div class="deco-3" style="left:400px;top:120px;"></div>
+</div>
+<div id="badge" style="left:300px;top:1140px;">公开活动</div>
+<div class="title-wrap" style="left:300px;top:1320px;width:2400px;height:840px;">
+  <div id="title">示例产业沙龙</div>
+</div>
+<div class="subtitle-wrap" style="left:300px;top:2220px;width:2400px;height:220px;">
+  <div id="subtitle">面向会员企业代表的产业资源对接与商务合作交流活动</div>
+</div>
+<div class="meta" style="left:300px;top:2500px;width:1900px;height:90px;">示例主理人 · 对话示例产业合伙人</div>
+<div class="qr-slot" style="left:2460px;top:2500px;width:400px;height:400px;"><div class="qr-inner"></div><div class="qr-label">扫码报名</div></div>
+<div class="logo-safe" style="left:300px;top:2860px;width:600px;height:100px;"><div class="logo-mark"></div><span>示例空间</span></div>
+<pre id="geo-report" style="display:none;"></pre>
+
+<script>
+(function(){
+  const q = new URLSearchParams(location.search);
+  const VARIANTS = {"public": "公开活动", "member-only": "会员专享", "closed-door": "闭门会"};
+  const v = q.get('v') || 'public';
+  const t = q.get('t');
+  const s = q.get('s');
+  document.documentElement.dataset.variant = v;
+  const titleEl = document.getElementById('title');
+  const subEl = document.getElementById('subtitle');
+  const badgeEl = document.getElementById('badge');
+  if (t !== null && t !== '') titleEl.textContent = t;
+  if (s !== null) {
+    if (s === '') { subEl.style.display = 'none'; }
+    else { subEl.textContent = s; }
+  }
+  if (badgeEl) badgeEl.textContent = VARIANTS[v];
+
+  function rectsOverlap(a, b) {
+    return !(a.right <= b.left + 0.5 || b.right <= a.left + 0.5 ||
+             a.bottom <= b.top + 0.5 || b.bottom <= a.top + 0.5);
+  }
+  function rect(el) { return el.getBoundingClientRect(); }
+
+  function report() {
+    const rep = {
+      template: document.body.dataset.template,
+      size: [document.body.offsetWidth, document.body.offsetHeight],
+      variant: v,
+      title_len: titleEl.textContent.length,
+      subtitle_len: (subEl.style.display === 'none' ? 0 : subEl.textContent.length),
+      checks: {}
+    };
+    const wrap = titleEl.closest('.title-wrap');
+    const clone = titleEl.cloneNode(true);
+    clone.style.cssText = '-webkit-line-clamp:unset;position:absolute;visibility:hidden;width:' +
+      (titleEl.clientWidth) + 'px;margin:0;';
+    document.body.appendChild(clone);
+    const neededH = clone.offsetHeight;
+    clone.remove();
+    rep.checks.title_fit = { needed_h: neededH, avail_h: wrap.clientHeight, ok: neededH <= wrap.clientHeight + 1 };
+    if (subEl.style.display !== 'none' && subEl.textContent.length > 0) {
+      const swrap = subEl.closest('.subtitle-wrap');
+      const sclone = subEl.cloneNode(true);
+      sclone.style.cssText = '-webkit-line-clamp:unset;position:absolute;visibility:hidden;width:' +
+        (subEl.clientWidth) + 'px;margin:0;';
+      document.body.appendChild(sclone);
+      const sNeeded = sclone.offsetHeight;
+      sclone.remove();
+      rep.checks.subtitle_fit = { needed_h: sNeeded, avail_h: swrap.clientHeight, ok: sNeeded <= swrap.clientHeight + 1 };
+    }
+    const movers = { title: titleEl.closest('.title-wrap') };
+    if (subEl.style.display !== 'none' && subEl.textContent.length > 0) movers.subtitle = subEl.closest('.subtitle-wrap');
+    const meta = document.querySelector('.meta');
+    if (meta) movers.meta = meta;
+    const prot = {};
+    const hero = document.querySelector('.hero');
+    if (hero) prot.hero = hero;
+    const qr = document.querySelector('.qr-slot');
+    if (qr) prot.qr_slot = qr;
+    const logo = document.querySelector('.logo-safe');
+    if (logo) prot.logo_safe = logo;
+    const overlaps = [];
+    for (const mn in movers) for (const pn in prot) {
+      if (rectsOverlap(rect(movers[mn]), rect(prot[pn]))) overlaps.push(mn + 'x' + pn);
+    }
+    if (badgeEl) for (const pn in prot) {
+      if (pn === 'hero') continue;
+      if (rectsOverlap(rect(badgeEl), rect(prot[pn]))) overlaps.push('badgex' + pn);
+    }
+    rep.checks.overlaps = { count: overlaps.length, pairs: overlaps };
+    if (qr) rep.checks.qr_slot = { edge: qr.offsetWidth, ok: qr.offsetWidth >= 200 };
+    let inside = true;
+    const W = document.body.offsetWidth, H = document.body.offsetHeight;
+    document.querySelectorAll('.title-wrap,.subtitle-wrap,.meta,.qr-slot,.logo-safe,.hero,#badge').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.left < -1 || r.top < -1 || r.right > W + 1 || r.bottom > H + 1) inside = false;
+    });
+    rep.checks.inside_canvas = inside;
+    // note: document-level scroll probes are unreliable under headless Chrome's
+    // minimum window clamp (>=500px); overflow containment is guaranteed by
+    // html/body overflow:hidden plus the inside_canvas element check above.
+    rep.pass = rep.checks.title_fit.ok &&
+               (rep.checks.subtitle_fit ? rep.checks.subtitle_fit.ok : true) &&
+               rep.checks.overlaps.count === 0 &&
+               (rep.checks.qr_slot ? rep.checks.qr_slot.ok : true) &&
+               rep.checks.inside_canvas;
+    document.getElementById('geo-report').textContent = JSON.stringify(rep);
+    document.title = 'GEOREPORT';
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => setTimeout(report, 80));
+  } else { setTimeout(report, 400); }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+ "$description": "Semver version register V1: published implies source_uri + sha256 match. Fictional brand; no client name.",
+ "templates": [
+  {
+   "template": "poster_vertical_1080x1920",
+   "version": "1.0.0",
+   "canvas": "1080x1920",
+   "source_uri": "templates/poster_vertical_1080x1920.html",
+   "source_sha256": "3677de8a18b0823a4e8ba2a785745425f2339ec70bccce11c7dcce4491e15c4c",
+   "sample_export": "evidence/samples/poster_vertical_1080x1920_sample.png",
+   "sample_sha256": "f9759772d83899b2adad52f4c88a327ce8aab2cca0a36f97f863574987125f9b",
+   "rollback_version": null
+  },
+  {
+   "template": "poster_square_1080x1080",
+   "version": "1.0.0",
+   "canvas": "1080x1080",
+   "source_uri": "templates/poster_square_1080x1080.html",
+   "source_sha256": "41cc721bba3e49ff2c1d73998525c865bd3c86233e41c618fb6cab28d4ed329f",
+   "sample_export": "evidence/samples/poster_square_1080x1080_sample.png",
+   "sample_sha256": "976cfd53853d396b9934783ecfe9cfd6504f1016fd1e0fe7496c7ed0e0b10431",
+   "rollback_version": null
+  },
+  {
+   "template": "poster_horizontal_1920x1080",
+   "version": "1.0.0",
+   "canvas": "1920x1080",
+   "source_uri": "templates/poster_horizontal_1920x1080.html",
+   "source_sha256": "538bcd94b45c43c66d47d48e7bd098c54bf88a08973b2df7c2383c73c67af26d",
+   "sample_export": "evidence/samples/poster_horizontal_1920x1080_sample.png",
+   "sample_sha256": "1dbc5ff2f053b621ff4cb815d9323ce333da6d69b84bff05549bdaa0083b63bf",
+   "rollback_version": null
+  },
+  {
+   "template": "oa_cover_first_900x383",
+   "version": "1.0.0",
+   "canvas": "900x383",
+   "source_uri": "templates/oa_cover_first_900x383.html",
+   "source_sha256": "38558de42c579b8c0b17070d415b86dbc812676ad39f604d95d4ae362ae23d3b",
+   "sample_export": "evidence/samples/oa_cover_first_900x383_sample.png",
+   "sample_sha256": "d1132966004d17e635b17b7676419c9b7f9fd6c8ddc38b3ec7532a154dbcc841",
+   "rollback_version": null
+  },
+  {
+   "template": "oa_cover_second_200x200",
+   "version": "1.0.0",
+   "canvas": "200x200",
+   "source_uri": "templates/oa_cover_second_200x200.html",
+   "source_sha256": "e7b0bdaa1d2019fa92cf9579916efb121d53d195307a44d9d471cf38d001b89b",
+   "sample_export": "evidence/samples/oa_cover_second_200x200_sample.png",
+   "sample_sha256": "e19ece66ed9bad87220f4899fb79c7bd0f0f8b9be041b24bfa0a7c1947ede0ca",
+   "rollback_version": null
+  },
+  {
+   "template": "mp_cover_750x420",
+   "version": "1.0.0",
+   "canvas": "750x420",
+   "source_uri": "templates/mp_cover_750x420.html",
+   "source_sha256": "3100ac8c3275bd57f96bfb93bfaa245eca5c824ce3f095ab3f7974ea219d69b3",
+   "sample_export": "evidence/samples/mp_cover_750x420_sample.png",
+   "sample_sha256": "9b226bbc6a0bae8384189bb12acd8114a54cf72c211fa2cdb39e5641df1cfae5",
+   "rollback_version": null
+  },
+  {
+   "template": "podcast_cover_3000x3000",
+   "version": "1.0.0",
+   "canvas": "3000x3000",
+   "source_uri": "templates/podcast_cover_3000x3000.html",
+   "source_sha256": "c37750b6e1d159fd1794d698c55e372b1156f9771018108290dc99e7ad45f8e7",
+   "sample_export": "evidence/samples/podcast_cover_3000x3000_sample.png",
+   "sample_sha256": "43e42c3e800946f82b6c89b041b686ff7349a98c14bacc2e1f63eac5b095ea2a",
+   "rollback_version": null
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+/* Generated from tokens/tokens.json (W3C DTCG) - the single hex source.
+   In Figma these import as the variable collection via Tokens Studio. */
+:root {
+  --color-badge-closed-door-bg: #1F2937;
+  --color-badge-closed-door-text: #FFFFFF;
+  --color-badge-member-only-bg: #854D0E;
+  --color-badge-member-only-text: #FFFFFF;
+  --color-badge-public-bg: #166534;
+  --color-badge-public-text: #FFFFFF;
+  --color-brand-accent-gold-500: #C9A227;
+  --color-brand-primary-500: #27795F;
+  --color-brand-primary-600: #1D5C46;
+  --color-brand-primary-700: #144536;
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-100: #EEF1F4;
+  --color-neutral-500: #6B7480;
+  --color-neutral-700: #3D444C;
+  --color-neutral-900: #1C2126;
+  --type-badge-lg: 700 28px/1 var(--typography-font-sans);
+  --type-badge-md: 700 24px/1 var(--typography-font-sans);
+  --type-badge-sm: 700 20px/1 var(--typography-font-sans);
+  --type-badge-xl: 700 56px/1 var(--typography-font-sans);
+  --type-badge-xs: 700 14px/1 var(--typography-font-sans);
+  --type-caption: 400 18px/1.3 var(--typography-font-sans);
+  --type-display-mp: 700 36px/1.2 var(--typography-font-sans);
+  --type-display-oa: 700 32px/1.2 var(--typography-font-sans);
+  --type-display-podcast: 700 220px/1.2 var(--typography-font-sans);
+  --type-display-poster: 700 88px/1.2 var(--typography-font-sans);
+  --type-display-square: 700 80px/1.2 var(--typography-font-sans);
+  --type-display-thumb: 700 24px/1.1 var(--typography-font-sans);
+  --type-display-wide: 700 52px/1.2 var(--typography-font-sans);
+  --type-logo-lg: 400 26px/1.2 var(--typography-font-sans);
+  --type-logo-md: 400 22px/1.2 var(--typography-font-sans);
+  --type-logo-sm: 400 16px/1.2 var(--typography-font-sans);
+  --type-logo-xl: 400 44px/1.2 var(--typography-font-sans);
+  --type-logo-xs: 400 14px/1.2 var(--typography-font-sans);
+  --type-meta: 400 24px/1.5 var(--typography-font-sans);
+  --type-meta-podcast: 400 48px/1.5 var(--typography-font-sans);
+  --type-meta-sm: 400 22px/1.6 var(--typography-font-sans);
+  --type-meta-square: 400 20px/1.5 var(--typography-font-sans);
+  --type-subtitle-lg: 400 28px/1.5 var(--typography-font-sans);
+  --type-subtitle-md: 400 24px/1.4 var(--typography-font-sans);
+  --type-subtitle-mp: 400 18px/1.3 var(--typography-font-sans);
+  --type-subtitle-podcast: 400 72px/1.4 var(--typography-font-sans);
+  --type-subtitle-sm: 400 16px/1.4 var(--typography-font-sans);
+  --typography-font-sans: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "sans-serif";
+}
