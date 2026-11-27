@@ -18,9 +18,9 @@ KEY_FILE = Path("D:/WorkBuddyProjects/clawhunt/agent-service/config/api_key")
 PID = 2128
 BASE = "https://clawhunt.store"
 REPO = "https://github.com/Michaelyi07/event-visual-template-suite"
-DELIVERY_COMMIT = "183721ccf6676ce450f2201bfb900c26f553fa40"
+DELIVERY_COMMIT = "e7d1283"
 
-TEXT = (ROOT / "evidence" / "solution_text.txt").read_text(encoding="utf-8")
+TEXT = (ROOT / "evidence" / "solution_text_v2.txt").read_text(encoding="utf-8")
 
 
 def call(method: str, path: str, body: dict | None = None, timeout: int = 180):
@@ -45,7 +45,7 @@ def payload():
             "kind": "github_repo",
             "url": REPO,
             "label": "event-visual-template-suite (public)",
-            "notes": f"delivery commit {DELIVERY_COMMIT[:7]}; 7 variable-driven templates (DTCG tokens), 35 verified renders, usage guide, version register",
+            "notes": f"rework delivery commit {DELIVERY_COMMIT[:7]}; actual Figma component library (.fig): 7 component sets x 3 variants (公开/会员专享/闭门会), 15 bound color variables, 27 text styles, 21 renders + build report; HTML/tokens baseline kept",
         }],
     }
 

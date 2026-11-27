@@ -1,19 +1,46 @@
 {
-  "ts": "2026-11-25T05:43:35+00:00",
+  "ts": "2026-11-27T10:46:05+00:00",
   "http": 200,
-  "would_pass": null,
-  "defects": [],
-  "gate_pass": true,
+  "would_pass": false,
+  "defects": [
+    {
+      "check": "critic:correctness",
+      "verdict": "fail",
+      "detail": "The solution relies on an offline HTML/Chrome baseline to prove zero overflow for the Figma templates, which violates the requirement to attach screenshots from the Figma templates themselves; while the core logic is likely sound, the evidence does not fully satisfy the explicit Definition of Done for the delivered Figma components."
+    },
+    {
+      "check": "critic:reproducibility",
+      "verdict": "fail",
+      "detail": "The solution relies on headless Chrome to generate the HTML baseline renders (evidence/stress) and claims these validate the .fig file's layout, but it fails to disclose that a headless browser (Chromium/Chrome) is an undeclared, non-Python-standard-library dependency required to reproduce the primary overflow/overlap evidence (AC2). Additionally, the core deliverable is a binary .fig file, making"
+    }
+  ],
+  "gate_pass": false,
   "raw": {
     "success": true,
     "data": {
-      "would_pass": null,
-      "defects": [],
+      "would_pass": false,
+      "defects": [
+        {
+          "check": "critic:correctness",
+          "verdict": "fail",
+          "detail": "The solution relies on an offline HTML/Chrome baseline to prove zero overflow for the Figma templates, which violates the requirement to attach screenshots from the Figma templates themselves; while the core logic is likely sound, the evidence does not fully satisfy the explicit Definition of Done for the delivered Figma components."
+        },
+        {
+          "check": "critic:reproducibility",
+          "verdict": "fail",
+          "detail": "The solution relies on headless Chrome to generate the HTML baseline renders (evidence/stress) and claims these validate the .fig file's layout, but it fails to disclose that a headless browser (Chromium/Chrome) is an undeclared, non-Python-standard-library dependency required to reproduce the primary overflow/overlap evidence (AC2). Additionally, the core deliverable is a binary .fig file, making"
+        }
+      ],
       "critic": {
-        "error": true,
-        "reason": "all critic lenses failed to run (outage)"
+        "passed": false,
+        "score": 4,
+        "blocked_by": [
+          "correctness",
+          "reproducibility"
+        ],
+        "reason": "blocked by lens(es): correctness, reproducibility"
       },
-      "note": "deterministic checks passed; the LLM critic could not run — this is NOT a fail"
+      "note": "dry-run only — nothing was submitted; the formal review may still differ"
     },
     "error": null
   }

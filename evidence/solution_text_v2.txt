@@ -2,7 +2,7 @@ Rework delivery for [S6-BRAND-004] Event Poster and Official Account Article Cov
 
 Public repo (anonymously retrievable, every file named below is in it):
 https://github.com/Michaelyi07/event-visual-template-suite
-Commit: d3a58a6 (branch main) — rework commit on top of 183721c; the previous HTML/tokens/stress/sample package is kept unchanged as the spec & comparison baseline, per your note.
+Commit: e7d1283 (branch main) — rework commit on top of 183721c; the previous HTML/tokens/stress/sample package is kept unchanged as the spec & comparison baseline, per your note.
 
 DELIVERED: BP-2128 Brand Component Library.fig (6.1 MB, at the repo root). Open it directly in Figma — no third-party importer involved. What is inside, point by point against the rework request:
 
@@ -17,7 +17,11 @@ DELIVERED: BP-2128 Brand Component Library.fig (6.1 MB, at the repo root). Open 
 
 5. Event type as a component variant property (AC3): each set exposes the property event_type with exactly three values — 公开 / 会员专享 / 闭门会 — three component variants per set (21 total). Switching the variant swaps the badge text and its text/background color pair together, from the color.badge.* variables; contrast (computed from token values): 公开 7.13:1, 会员专享 6.85:1, 闭门会 14.68:1 (WCAG 1.4.3 >= 4.5:1).
 
-6. Variant renders page in the file: "Variant Renders" holds 21 renders (every variant of every set, down-scaled for file size) so the badges can be reviewed without switching anything.
+6. Variant renders page in the file: "Variant Renders" holds 21 renders (every variant of every set, down-scaled for file size) so the badges can be reviewed without switching anything. The same 21 renders are also committed as standalone PNGs under evidence/fig_renders/ (with manifest.json: dimensions per template; the authoritative variant mapping is the .fig itself), so the switch results are reviewable without opening Figma.
+
+About AC2 evidence — now generated from the delivered Figma file itself: the .fig contains a "Title Stress (10-30)" page built by cloning each template's 公开 variant twice and setting the title to the same 10-char string (产业资源对接主题沙龙) and 30-char string (新一代产业资源对接平台会员企业春季合作洽谈系列主题沙龙活动月) used by the baseline stress suite — 14 stress renders straight out of the delivered Figma components, through their own auto-layout frames and variable-bound styles. All 14 are exported as images embedded in the .fig and committed under evidence/figma_stress/ (51 embedded images extracted; labeled contact sheets figma_stress_sheet1.png / figma_stress_sheet2.png show every render with its template and pixel size — the 10-char and 30-char stress renders are visually identifiable by their titles, e.g. #3, #13, #15, #33 show the 30-char wrapped title). The original HTML-baseline stress suite (14 renders + geometry JSON, zero overflow/overlap) remains as the comparison baseline. The 200x200 template is included in the title stress test (t10/t30 both PASS in verification_log.md); it has no subtitle layer by the documented exception. Additionally, all 21 variant renders are committed as PNGs under evidence/fig_renders/ (with a manifest).
+
+Note on the repo tooling: build_templates.py / tools/render_all.py / verify_gates.py are optional offline regeneration and verification tooling (Python standard library only, headless Chrome for the baseline renders; no network calls at runtime, no credentials, nothing executes on your side unless you choose to re-run the gates). The deliverable itself is the .fig file plus the evidence files.
 
 Evidence kept as the baseline (unchanged from the first delivery, per your note): evidence/stress/ (14 headless-Chrome renders: every template x {10-char title, 30-char title + 40-char subtitle} with zero overflow and zero overlap, per-render geometry JSON), evidence/samples/ (7 fictional sample exports, sha256 in version_register.json), tokens/tokens.json (W3C DTCG), templates/*.html, build_templates.py, verify_gates.py (8 gates), verification_log.md, usage_guide.md.
 
@@ -26,7 +30,7 @@ Two notes you asked to be carried over:
 - evidence/variants holds exactly 14 files (7 templates x {member-only, closed-door}); the public variant is exercised by every stress render. The earlier "28" in the README was a miscount and is corrected to 14 in this commit; the tokens.json typography count is likewise corrected to 27 in the README (the locked first-delivery text still says 28 — the repo HEAD is authoritative).
 
 Verification you can run without logging in:
-- Download the repo at commit d3a58a6 and open BP-2128 Brand Component Library.fig in Figma: select any set and switch event_type in the right panel — the badge swaps text and colors; open the Variables panel to see the Brand Tokens collection (15 variables); open the Build Report page for the build log (FINAL done, errors=0); open Variant Renders for the 21 variant renders.
+- Download the repo at commit e7d1283 and open BP-2128 Brand Component Library.fig in Figma: select any set and switch event_type in the right panel — the badge swaps text and colors; open the Variables panel to see the Brand Tokens collection (15 variables); open the Build Report page for the build log (FINAL done, errors=0); open Variant Renders for the 21 variant renders.
 - G2/G3/G4/G5/G6 gates on the HTML baseline: python verify_gates.py (exit 0), commands and raw outputs recorded in verification_log.md.
 
 Scope unchanged: $80 flat, one-time, no recurring fee; fictional data only; no client name; the two documented deviations stay as accepted in your rework note.
