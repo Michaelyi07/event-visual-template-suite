@@ -1,0 +1,680 @@
+{
+ "colors": {
+  "color.brand.primary.700": "#144536",
+  "color.brand.primary.600": "#1D5C46",
+  "color.brand.primary.500": "#27795F",
+  "color.brand.accent.gold.500": "#C9A227",
+  "color.neutral.900": "#1C2126",
+  "color.neutral.700": "#3D444C",
+  "color.neutral.500": "#6B7480",
+  "color.neutral.100": "#EEF1F4",
+  "color.neutral.0": "#FFFFFF",
+  "color.badge.public.bg": "#166534",
+  "color.badge.public.text": "#FFFFFF",
+  "color.badge.member-only.bg": "#854D0E",
+  "color.badge.member-only.text": "#FFFFFF",
+  "color.badge.closed-door.bg": "#1F2937",
+  "color.badge.closed-door.text": "#FFFFFF"
+ },
+ "textStyles": {
+  "display-poster": {
+   "weight": 700,
+   "size": 88.0,
+   "lh": 120
+  },
+  "display-square": {
+   "weight": 700,
+   "size": 80.0,
+   "lh": 120
+  },
+  "display-wide": {
+   "weight": 700,
+   "size": 52.0,
+   "lh": 120
+  },
+  "display-oa": {
+   "weight": 700,
+   "size": 32.0,
+   "lh": 120
+  },
+  "display-thumb": {
+   "weight": 700,
+   "size": 24.0,
+   "lh": 110
+  },
+  "display-mp": {
+   "weight": 700,
+   "size": 36.0,
+   "lh": 120
+  },
+  "display-podcast": {
+   "weight": 700,
+   "size": 220.0,
+   "lh": 120
+  },
+  "subtitle-lg": {
+   "weight": 400,
+   "size": 28.0,
+   "lh": 150
+  },
+  "subtitle-md": {
+   "weight": 400,
+   "size": 24.0,
+   "lh": 140
+  },
+  "subtitle-sm": {
+   "weight": 400,
+   "size": 16.0,
+   "lh": 140
+  },
+  "subtitle-mp": {
+   "weight": 400,
+   "size": 18.0,
+   "lh": 130
+  },
+  "subtitle-podcast": {
+   "weight": 400,
+   "size": 72.0,
+   "lh": 140
+  },
+  "meta": {
+   "weight": 400,
+   "size": 24.0,
+   "lh": 150
+  },
+  "meta-square": {
+   "weight": 400,
+   "size": 20.0,
+   "lh": 150
+  },
+  "meta-sm": {
+   "weight": 400,
+   "size": 22.0,
+   "lh": 160
+  },
+  "meta-podcast": {
+   "weight": 400,
+   "size": 48.0,
+   "lh": 150
+  },
+  "badge-xl": {
+   "weight": 700,
+   "size": 56.0,
+   "lh": 100
+  },
+  "badge-lg": {
+   "weight": 700,
+   "size": 28.0,
+   "lh": 100
+  },
+  "badge-md": {
+   "weight": 700,
+   "size": 24.0,
+   "lh": 100
+  },
+  "badge-sm": {
+   "weight": 700,
+   "size": 20.0,
+   "lh": 100
+  },
+  "badge-xs": {
+   "weight": 700,
+   "size": 14.0,
+   "lh": 100
+  },
+  "logo-xl": {
+   "weight": 400,
+   "size": 44.0,
+   "lh": 120
+  },
+  "logo-lg": {
+   "weight": 400,
+   "size": 26.0,
+   "lh": 120
+  },
+  "logo-md": {
+   "weight": 400,
+   "size": 22.0,
+   "lh": 120
+  },
+  "logo-sm": {
+   "weight": 400,
+   "size": 16.0,
+   "lh": 120
+  },
+  "logo-xs": {
+   "weight": 400,
+   "size": 14.0,
+   "lh": 120
+  },
+  "caption": {
+   "weight": 400,
+   "size": 18.0,
+   "lh": 130
+  }
+ },
+ "fontFamily": "Noto Sans SC",
+ "badgeLabels": {
+  "public": "公开活动",
+  "member-only": "会员专享",
+  "closed-door": "闭门会"
+ },
+ "eventTypes": [
+  {
+   "key": "public",
+   "value": "公开"
+  },
+  {
+   "key": "member-only",
+   "value": "会员专享"
+  },
+  {
+   "key": "closed-door",
+   "value": "闭门会"
+  }
+ ],
+ "templates": {
+  "poster_vertical_1080x1920": {
+   "w": 1080,
+   "h": 1920,
+   "hero": [
+    80,
+    80,
+    920,
+    980
+   ],
+   "heroRadius": 24,
+   "deco1": 320,
+   "deco2": 180,
+   "deco3": 420,
+   "decoBorder": 8,
+   "decoRadius": 64,
+   "decoPos": [
+    560,
+    120,
+    700,
+    620,
+    180,
+    660
+   ],
+   "badge": [
+    104,
+    104
+   ],
+   "badgePad": [
+    12,
+    24
+   ],
+   "badgeStyle": "badge-lg",
+   "titleWrap": [
+    80,
+    1100,
+    920,
+    330
+   ],
+   "titleStyle": "display-poster",
+   "titleClamp": 3,
+   "subtitleWrap": [
+    80,
+    1450,
+    640,
+    96
+   ],
+   "subtitleStyle": "subtitle-lg",
+   "meta": [
+    80,
+    1560,
+    620,
+    90
+   ],
+   "metaStyle": "meta",
+   "metaBold": "2027-03-18 14:00",
+   "metaRest": "示例城市 · 示例园区国际会议中心",
+   "metaBr": true,
+   "qr": [
+    760,
+    1480,
+    240,
+    240
+   ],
+   "qrInner": 78,
+   "qrLabelStyle": "caption",
+   "qrLabelOff": 26,
+   "logo": [
+    80,
+    1780,
+    400,
+    100
+   ],
+   "logoStyle": "logo-lg",
+   "logoMark": 56,
+   "logoMarkRadius": 14
+  },
+  "poster_square_1080x1080": {
+   "w": 1080,
+   "h": 1080,
+   "hero": [
+    72,
+    72,
+    936,
+    420
+   ],
+   "heroRadius": 24,
+   "deco1": 180,
+   "deco2": 110,
+   "deco3": 220,
+   "decoBorder": 6,
+   "decoRadius": 40,
+   "decoPos": [
+    600,
+    60,
+    740,
+    240,
+    140,
+    220
+   ],
+   "badge": [
+    92,
+    92
+   ],
+   "badgePad": [
+    10,
+    20
+   ],
+   "badgeStyle": "badge-md",
+   "titleWrap": [
+    72,
+    532,
+    936,
+    300
+   ],
+   "titleStyle": "display-square",
+   "titleClamp": 3,
+   "subtitleWrap": [
+    72,
+    852,
+    640,
+    84
+   ],
+   "subtitleStyle": "subtitle-md",
+   "meta": [
+    72,
+    956,
+    640,
+    44
+   ],
+   "metaStyle": "meta-square",
+   "metaBold": "2027-03-18 14:00",
+   "metaRest": "示例园区国际会议中心",
+   "metaBr": false,
+   "qr": [
+    788,
+    838,
+    220,
+    220
+   ],
+   "qrInner": 78,
+   "qrLabelStyle": "caption",
+   "qrLabelOff": 26,
+   "logo": [
+    72,
+    1000,
+    300,
+    60
+   ],
+   "logoStyle": "logo-sm",
+   "logoMark": 40,
+   "logoMarkRadius": 10
+  },
+  "poster_horizontal_1920x1080": {
+   "w": 1920,
+   "h": 1080,
+   "hero": [
+    0,
+    0,
+    1120,
+    1080
+   ],
+   "heroRadius": 0,
+   "deco1": 340,
+   "deco2": 200,
+   "deco3": 460,
+   "decoBorder": 8,
+   "decoRadius": 64,
+   "decoPos": [
+    640,
+    100,
+    820,
+    620,
+    200,
+    160
+   ],
+   "badge": [
+    1184,
+    64
+   ],
+   "badgePad": [
+    10,
+    20
+   ],
+   "badgeStyle": "badge-md",
+   "titleWrap": [
+    1184,
+    150,
+    672,
+    200
+   ],
+   "titleStyle": "display-wide",
+   "titleClamp": 3,
+   "subtitleWrap": [
+    1184,
+    370,
+    672,
+    96
+   ],
+   "subtitleStyle": "subtitle-md",
+   "meta": [
+    1184,
+    486,
+    672,
+    120
+   ],
+   "metaStyle": "meta-sm",
+   "metaBold": "2027-03-18 14:00",
+   "metaRest": "示例城市 · 示例园区国际会议中心\n主办方：示例空间",
+   "metaBr": false,
+   "qr": [
+    1184,
+    660,
+    240,
+    240
+   ],
+   "qrInner": 78,
+   "qrLabelStyle": "caption",
+   "qrLabelOff": 26,
+   "logo": [
+    1184,
+    940,
+    400,
+    80
+   ],
+   "logoStyle": "logo-md",
+   "logoMark": 44,
+   "logoMarkRadius": 12
+  },
+  "oa_cover_first_900x383": {
+   "w": 900,
+   "h": 383,
+   "hero": [
+    258,
+    40,
+    383,
+    120
+   ],
+   "heroRadius": 24,
+   "deco1": 64,
+   "deco2": 40,
+   "deco3": 80,
+   "decoBorder": 4,
+   "decoRadius": 20,
+   "decoPos": [
+    210,
+    -14,
+    40,
+    40,
+    120,
+    10
+   ],
+   "badge": [
+    258,
+    170
+   ],
+   "badgePad": [
+    6,
+    14
+   ],
+   "badgeStyle": "badge-sm",
+   "titleWrap": [
+    258,
+    214,
+    383,
+    116
+   ],
+   "titleStyle": "display-oa",
+   "titleClamp": 3,
+   "subtitleWrap": [
+    258,
+    334,
+    383,
+    46
+   ],
+   "subtitleStyle": "subtitle-sm",
+   "meta": null,
+   "metaStyle": "meta",
+   "metaBold": "",
+   "metaRest": "",
+   "metaBr": false,
+   "qr": [
+    660,
+    151,
+    200,
+    200
+   ],
+   "qrInner": 78,
+   "qrLabelStyle": "caption",
+   "qrLabelOff": 26,
+   "logo": [
+    20,
+    320,
+    220,
+    44
+   ],
+   "logoStyle": "logo-sm",
+   "logoMark": 32,
+   "logoMarkRadius": 8
+  },
+  "oa_cover_second_200x200": {
+   "w": 200,
+   "h": 200,
+   "hero": [
+    0,
+    0,
+    200,
+    48
+   ],
+   "heroRadius": 0,
+   "deco1": 26,
+   "deco2": 16,
+   "deco3": 34,
+   "decoBorder": 3,
+   "decoRadius": 10,
+   "decoPos": [
+    130,
+    -10,
+    30,
+    6,
+    60,
+    4
+   ],
+   "badge": [
+    10,
+    10
+   ],
+   "badgePad": [
+    4,
+    8
+   ],
+   "badgeStyle": "badge-xs",
+   "titleWrap": [
+    16,
+    56,
+    168,
+    134
+   ],
+   "titleStyle": "display-thumb",
+   "titleClamp": 5,
+   "subtitleWrap": null,
+   "subtitleStyle": "subtitle-md",
+   "meta": null,
+   "metaStyle": "meta",
+   "metaBold": "",
+   "metaRest": "",
+   "metaBr": false,
+   "qr": null,
+   "qrInner": 78,
+   "qrLabelStyle": "caption",
+   "qrLabelOff": 26,
+   "logo": null,
+   "logoStyle": "logo-md",
+   "logoMark": 44,
+   "logoMarkRadius": 12
+  },
+  "mp_cover_750x420": {
+   "w": 750,
+   "h": 420,
+   "hero": [
+    0,
+    0,
+    750,
+    160
+   ],
+   "heroRadius": 0,
+   "deco1": 80,
+   "deco2": 48,
+   "deco3": 100,
+   "decoBorder": 4,
+   "decoRadius": 24,
+   "decoPos": [
+    500,
+    -18,
+    600,
+    60,
+    300,
+    20
+   ],
+   "badge": [
+    40,
+    36
+   ],
+   "badgePad": [
+    6,
+    14
+   ],
+   "badgeStyle": "badge-sm",
+   "titleWrap": [
+    40,
+    184,
+    430,
+    140
+   ],
+   "titleStyle": "display-mp",
+   "titleClamp": 3,
+   "subtitleWrap": [
+    40,
+    332,
+    430,
+    48
+   ],
+   "subtitleStyle": "subtitle-mp",
+   "meta": null,
+   "metaStyle": "meta",
+   "metaBold": "",
+   "metaRest": "",
+   "metaBr": false,
+   "qr": [
+    500,
+    176,
+    200,
+    200
+   ],
+   "qrInner": 78,
+   "qrLabelStyle": "caption",
+   "qrLabelOff": 26,
+   "logo": [
+    40,
+    388,
+    200,
+    28
+   ],
+   "logoStyle": "logo-xs",
+   "logoMark": 20,
+   "logoMarkRadius": 6
+  },
+  "podcast_cover_3000x3000": {
+   "w": 3000,
+   "h": 3000,
+   "hero": [
+    300,
+    300,
+    2400,
+    780
+   ],
+   "heroRadius": 24,
+   "deco1": 520,
+   "deco2": 300,
+   "deco3": 640,
+   "decoBorder": 14,
+   "decoRadius": 96,
+   "decoPos": [
+    1560,
+    60,
+    1900,
+    420,
+    400,
+    120
+   ],
+   "badge": [
+    300,
+    1140
+   ],
+   "badgePad": [
+    20,
+    44
+   ],
+   "badgeStyle": "badge-xl",
+   "titleWrap": [
+    300,
+    1320,
+    2400,
+    840
+   ],
+   "titleStyle": "display-podcast",
+   "titleClamp": 3,
+   "subtitleWrap": [
+    300,
+    2220,
+    2400,
+    220
+   ],
+   "subtitleStyle": "subtitle-podcast",
+   "meta": [
+    300,
+    2500,
+    1900,
+    90
+   ],
+   "metaStyle": "meta-podcast",
+   "metaBold": "",
+   "metaRest": "示例主理人 · 对话示例产业合伙人",
+   "metaBr": false,
+   "qr": [
+    2460,
+    2500,
+    400,
+    400
+   ],
+   "qrInner": 80,
+   "qrLabelStyle": "meta-podcast",
+   "qrLabelOff": 40,
+   "logo": [
+    300,
+    2860,
+    600,
+    100
+   ],
+   "logoStyle": "logo-xl",
+   "logoMark": 80,
+   "logoMarkRadius": 20
+  }
+ }
+}

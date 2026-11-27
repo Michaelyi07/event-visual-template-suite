@@ -1,0 +1,170 @@
+[
+ {
+  "file": "poster_vertical_1080x1920_1.png",
+  "template": "poster_vertical_1080x1920",
+  "w": 788,
+  "h": 1400,
+  "bytes": 390703,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "oa_cover_first_900x383_1.png",
+  "template": "oa_cover_first_900x383",
+  "w": 900,
+  "h": 383,
+  "bytes": 58322,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_horizontal_1920x1080_1.png",
+  "template": "poster_horizontal_1920x1080",
+  "w": 1400,
+  "h": 788,
+  "bytes": 521917,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "podcast_cover_3000x3000_1.png",
+  "template": "podcast_cover_3000x3000",
+  "w": 1400,
+  "h": 1400,
+  "bytes": 356216,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_horizontal_1920x1080_2.png",
+  "template": "poster_horizontal_1920x1080",
+  "w": 1400,
+  "h": 788,
+  "bytes": 521476,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_vertical_1080x1920_2.png",
+  "template": "poster_vertical_1080x1920",
+  "w": 788,
+  "h": 1400,
+  "bytes": 390596,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_horizontal_1920x1080_3.png",
+  "template": "poster_horizontal_1920x1080",
+  "w": 1400,
+  "h": 788,
+  "bytes": 521184,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_square_1080x1080_1.png",
+  "template": "poster_square_1080x1080",
+  "w": 1080,
+  "h": 1080,
+  "bytes": 320391,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "oa_cover_first_900x383_2.png",
+  "template": "oa_cover_first_900x383",
+  "w": 900,
+  "h": 383,
+  "bytes": 58741,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "podcast_cover_3000x3000_2.png",
+  "template": "podcast_cover_3000x3000",
+  "w": 1400,
+  "h": 1400,
+  "bytes": 355563,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "oa_cover_second_200x200_1.png",
+  "template": "oa_cover_second_200x200",
+  "w": 200,
+  "h": 200,
+  "bytes": 12252,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "mp_cover_750x420_1.png",
+  "template": "mp_cover_750x420",
+  "w": 750,
+  "h": 420,
+  "bytes": 107415,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "oa_cover_second_200x200_2.png",
+  "template": "oa_cover_second_200x200",
+  "w": 200,
+  "h": 200,
+  "bytes": 12057,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_square_1080x1080_2.png",
+  "template": "poster_square_1080x1080",
+  "w": 1080,
+  "h": 1080,
+  "bytes": 321232,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "oa_cover_second_200x200_3.png",
+  "template": "oa_cover_second_200x200",
+  "w": 200,
+  "h": 200,
+  "bytes": 12019,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_vertical_1080x1920_3.png",
+  "template": "poster_vertical_1080x1920",
+  "w": 788,
+  "h": 1400,
+  "bytes": 390972,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "mp_cover_750x420_2.png",
+  "template": "mp_cover_750x420",
+  "w": 750,
+  "h": 420,
+  "bytes": 108110,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "podcast_cover_3000x3000_3.png",
+  "template": "podcast_cover_3000x3000",
+  "w": 1400,
+  "h": 1400,
+  "bytes": 356657,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "mp_cover_750x420_3.png",
+  "template": "mp_cover_750x420",
+  "w": 750,
+  "h": 420,
+  "bytes": 107883,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "oa_cover_first_900x383_3.png",
+  "template": "oa_cover_first_900x383",
+  "w": 900,
+  "h": 383,
+  "bytes": 59009,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ },
+ {
+  "file": "poster_square_1080x1080_3.png",
+  "template": "poster_square_1080x1080",
+  "w": 1080,
+  "h": 1080,
+  "bytes": 320810,
+  "note": "sequence = zip entry order within template; authoritative variant mapping = open the .fig (Variant Renders page)"
+ }
+]

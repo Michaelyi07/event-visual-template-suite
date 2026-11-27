@@ -1,0 +1,20 @@
+{
+  "ts": "2026-11-25T05:43:35+00:00",
+  "http": 200,
+  "would_pass": null,
+  "defects": [],
+  "gate_pass": true,
+  "raw": {
+    "success": true,
+    "data": {
+      "would_pass": null,
+      "defects": [],
+      "critic": {
+        "error": true,
+        "reason": "all critic lenses failed to run (outage)"
+      },
+      "note": "deterministic checks passed; the LLM critic could not run — this is NOT a fail"
+    },
+    "error": null
+  }
+}

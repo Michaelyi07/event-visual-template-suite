@@ -4,15 +4,11 @@ Template revision package for a business member space platform's operational vis
 
 ## Figma component library (V1.1, the actual .fig)
 
-`BP-2128 Brand Component Library.fig` (6.1 MB) is the real Figma file this package describes: 7 component sets × 3 variants (`event_type = public / member-only / closed-door`), a `Brand Tokens` collection with 15 color variables (values set via `setValueForMode`), 27 text styles, solid fills and gradient stops bound to the variables, a Variant Renders page (21 down-scaled renders of every variant) and a Build Report page (final gate output: `FINAL done, errors=0`). Open it directly in Figma — no plugin import step needed. The HTML sources and DTCG tokens remain the regeneration path (`build_templates.py`); the .fig is the handoff artifact.
+`BP-2128 Brand Component Library.fig` (6.1 MB) is the real Figma file this package describes: 7 component sets × 3 variants (`event_type = 公开 / 会员专享 / 闭门会`), a `Brand Tokens` collection with 15 color variables (values set via `setValueForMode`), 27 text styles, solid fills and gradient stops bound to the variables, a Variant Renders page (21 down-scaled renders of every variant) and a Build Report page (final gate output: `FINAL done, errors=0`). Open it directly in Figma — no plugin import step needed. The HTML sources and DTCG tokens remain the regeneration path (`build_templates.py`); the .fig is the handoff artifact.
 
-## Why source files instead of a Figma link
+## Delivery form (rework V1.1)
 
-The order's dependency note allows stubs/mocks for dependencies, and per the accepted scope the client supplies Figma access at handoff. This package therefore ships the templates as exact-size, Figma-importable source files plus the full variable collection:
-
-1. `tokens/tokens.json` (W3C DTCG) imports 1:1 into Figma via the Tokens Studio plugin -> 15 color variables + 28 typography styles (Figma variables do not support the typography composite type, so text styles land as styles).
-2. Each `templates/*.html` opens pixel-exact in a browser and imports into Figma via the community plugin "html.to.design" (free tier: 10 imports/month; enable the auto-layout import option, it is not on by default) preserving auto-layout frames (title/subtitle are flex auto-layout with line clamps; badge/logo/QR are absolutely positioned layers anchored to corners) — or any HTML-to-Figma importer of choice. Layer names match the element roles (`title`, `subtitle`, `badge`, `hero`, `qr-slot`, `logo-safe`).
-3. The badge component maps to a Figma component set with one variant property `event_type` = `public` / `member-only` / `closed-door` (variant values table: `templates/_badge_labels.json`; color pairs live in the `color.badge.*` tokens). `build_templates.py` regenerates all files from the tokens + layout spec.
+The first delivery shipped open-format sources only; the client's rework requested delivery **in Figma**. This commit adds the actual Figma file (`BP-2128 Brand Component Library.fig`) as the handoff artifact: 7 component sets x 3 variants (`event_type = 公开 / 会员专享 / 闭门会`), 15 color variables with correct values, 27 text styles, Auto Layout text areas, solid fills and gradient stops bound to the variables, plus in-file Variant Renders (21) and Build Report (`FINAL done, errors=0`) pages. The HTML sources and DTCG tokens stay in the repo unchanged as the spec & comparison baseline (per the client's note); `build_templates.py` remains the regeneration path for the HTML baseline.
 
 ## Contents
 
@@ -22,9 +18,9 @@ The order's dependency note allows stubs/mocks for dependencies, and per the acc
 | `templates/*.html` (7) | Exact-canvas template sources (1080×1920, 1080×1080, 1920×1080, 900×383, 200×200, 750×420, 3000×3000) |
 | `templates/_badge_labels.json` | Badge variant property table |
 | `evidence/stress/` | 14 real renders: every template at 10-char and 30-char titles (PNG + geometry JSON) |
-| `evidence/variants/` | 28 variant-proof renders: every template x member-only/closed-door (public variant is covered by every stress render) |
+| `evidence/variants/` | 14 variant-proof renders: every template x {member-only, closed-door} (the public variant is exercised by every stress render) |
 | `evidence/samples/` | 7 fictional-event sample export PNGs (sha256 in `version_register.json`) |
-| `evidence/geo_reports.json` | Raw geometry reports for all 24 renders |
+| `evidence/geo_reports.json` | Raw geometry reports for all 35 renders |
 | `usage_guide.md` | One-page usage guide (editable/locked, crop rules, export PNG/JPG q85) |
 | `version_register.json` | Semver register: source_uri + sha256 per template + sample |
 | `verify_gates.py` | 8 automated gates |

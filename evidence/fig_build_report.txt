@@ -1,0 +1,15 @@
+# Figma Build Report - actual run outputs (v10/v11 plugin runs, 2026-11-27)
+
+v10 run (16:14 local, one-shot before renders fix):
+BP-2128 BUILD REPORT v10 (live)
+started 2026-11-27T08:14:08.122Z
+stage: set podcast_cover_3000x3000 done, errors=0
+build_errors (0): NONE
+
+v11 run (17:03 local, with renders downscale + per-render progress):
+BP-2128 BUILD REPORT v11 (live)
+started 2026-11-27T09:03:49.183Z
+stage: FINAL done, errors=0
+build_errors (0): NONE
+
+(The Build Report page is also present inside BP-2128 Brand Component Library.fig with the same content.)

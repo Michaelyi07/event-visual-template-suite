@@ -1,0 +1,51 @@
+Deliverable for [S6-BRAND-004] Event Poster and Official Account Article Cover Template Revision (7 templates).
+
+Public repo (every file named in this text is in it, anonymously retrievable):
+https://github.com/Michaelyi07/event-visual-template-suite
+Commit: 183721ccf6676ce450f2201bfb900c26f553fa40 (branch main)
+
+Delivery form: per the accepted scope the client supplies Figma access at handoff, and the brief allows "Figma link or source files". This package ships the templates as exact-size, Figma-importable source files plus the full revised variable collection - no credentials needed to review or use:
+- tokens/tokens.json is W3C DTCG format and imports 1:1 via the Tokens Studio plugin -> 15 color variables + 28 typography styles (Figma variables do not support the typography composite type, so text styles land as styles).
+- Each templates/*.html opens pixel-exact in a browser and imports into Figma via the community plugin html.to.design (free tier: 10 imports/month; enable its auto-layout import option) preserving auto-layout frames. Layer names match roles: title, subtitle, badge, hero, qr-slot, logo-safe.
+- templates/_badge_labels.json defines the component variant property: event_type = public / member-only / closed-door; color pairs live in the color.badge.* tokens. build_templates.py regenerates everything from tokens + layout spec.
+
+=== AC1: 7 templates, all colors/fonts reference revised styles or variables ===
+7 exact-canvas templates: poster 1080x1920 / 1080x1080 / 1920x1080, OA first 900x383, OA second 200x200, mini-program cover 750x420, podcast episode cover 3000x3000. Gate G2 scans every template: raw hex hits == 0 and literal font-family == 0 (everything resolves to var(--...) from the generated tokens.css; tokens.css is the single hex source). G3 validates DTCG structure ($type, hex format, fontFamily/fontSize/lineHeight of all 28 text styles).
+
+=== AC2: 10-char and 30-char titles, no overflow or overlap (screenshots attached) ===
+evidence/stress/ holds 14 real headless-Chrome renders (every template x {10-char title, 30-char title + 40-char subtitle}, PNG at exact canvas size) plus per-render geometry JSON: the title is re-measured in-page WITHOUT its line clamp (cloned node) and must fit its auto-layout block; subtitle likewise; bounding-box intersections between text blocks and hero/QR/logo zones must be empty. All 14 pass with zero overflow and zero overlap. Badge-to-QR/logo/text overlap also checked. Sample screenshots at 10 chars and 30 chars for all 7 templates are in the repo.
+
+=== AC3: 3 event-type corner badges switchable via component variants ===
+Variant property with 3 values (public / member-only / closed-door); text and background/text colors switch together from the tokens. evidence/variants/ holds 28 variant-proof renders (every template x member-only/closed-door; the public variant is exercised by every stress render). WCAG 1.4.3 contrast computed from token values: public 7.13:1, member-only 6.85:1, closed-door 14.68:1 (>= 4.5:1). G5 asserts per-template 3-variant pass.
+
+=== AC4: one fictional sample export per template ===
+evidence/samples/ holds 7 PNG exports of fictional events (示例产业沙龙 - public poster, 示例会员资源对接会 - member-only, 示例创始人闭门研讨 - closed-door, podcast 单集封面 etc.). version_register.json records semver 1.0.0 per template with source_uri + template sha256 + sample sha256 (rollback_version null for V1; published implies source_uri and sha256 match).
+
+=== Documented deviations (with rationale) ===
+- oa_cover_second_200x200: no subtitle layer and no QR slot - a 200 px QR cannot fit a 200 px canvas, and the thumbnail links to the detail page. Badge font 14 px (thumbnail exception; readability floor otherwise 16 px+). Stated in README and usage_guide.md.
+- oa_cover_first_900x383: QR slot sits in the right extension zone (WeChat crops history previews to the central ~383x383); the guide states when to use a poster template instead.
+
+=== Usage guide ===
+usage_guide.md (one page): editable vs locked elements (title 10-30 chars, subtitle 0-40 optional, badge variant-only, hero image slot, QR image swap, logo safe area), image crop rules (OA central-square crop, mini-program 5:4 share card, podcast safe area), export rules (PNG, or JPG at quality 85; exact 1x sizes; podcast covers non-transparent).
+
+=== Verification (real runs; CPython 3.13.14, Windows 64-bit, Chrome headless) ===
+$ python tools/render_all.py
+(every line PASS; title_fit=True overlaps=0)
+== stress: 7 templates x (10-char, 30-char) ==  -> 14 PASS
+== variant proof: 7 templates x (member-only, closed-door) == -> 14 PASS
+== samples: 7 fictional exports == -> 7 PASS
+TOTAL 35 runs, 0 failed: []
+
+$ python verify_gates.py
+PASS G1 template_count==7_sizes_match
+PASS G2 raw_hex_hits==0_and_fonts_via_var | hex=[] font_family_files=[]
+PASS G3 dtcg_tokens_valid | bad=[]
+PASS G4 stress_14_runs_zero_overflow_overlap | runs=14 failed=[] title_lens_ok=True
+PASS G5 badge_variants==3_per_template_and_contrast>=4.5 | variant_runs=14 missing=[] contrast={'public': 7.13, 'member-only': 6.85, 'closed-door': 14.68}
+PASS G6 sample_exports==7_sha256_match | n=7 sha_ok=7/7
+PASS G7 usage_guide_sections
+PASS G8 qr_slot_edge>=200
+SUMMARY 8/8 gates passed - ALL PASS
+Exit code: 0
+
+All source PNGs and JSON reports under evidence/ are raw outputs of these runs (no staged or expected values). Full command transcripts, method notes (how fit/overlap/contrast are actually measured) and the fix history are in verification_log.md.

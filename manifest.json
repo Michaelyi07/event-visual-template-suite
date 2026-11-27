@@ -1,43 +1,106 @@
 {
-  "package": "event-poster-cover-template-revision",
-  "pid": 2128,
-  "ticket": "S6-BRAND-004",
-  "design_only": true,
-  "fictional_only": true,
-  "client_name_included": false,
-  "delivery_form": "open-format source files + variable collection (client supplies Figma access at handoff per accepted scope; brief allows source files)",
-  "files": [
-    {"name": "tokens/tokens.json", "purpose": "W3C DTCG design tokens: colors + typography (single hex source)"},
-    {"name": "tokens/tokens.css", "purpose": "Generated CSS variable collection (43 variables)"},
-    {"name": "templates/poster_vertical_1080x1920.html", "purpose": "Vertical event poster template"},
-    {"name": "templates/poster_square_1080x1080.html", "purpose": "Square event poster template"},
-    {"name": "templates/poster_horizontal_1920x1080.html", "purpose": "Horizontal event poster template"},
-    {"name": "templates/oa_cover_first_900x383.html", "purpose": "Official Account first-image template"},
-    {"name": "templates/oa_cover_second_200x200.html", "purpose": "Official Account second-image (thumbnail) template"},
-    {"name": "templates/mp_cover_750x420.html", "purpose": "Mini-program event cover template"},
-    {"name": "templates/podcast_cover_3000x3000.html", "purpose": "Founder podcast episode cover template"},
-    {"name": "templates/_badge_labels.json", "purpose": "Badge component variant property table (public/member-only/closed-door)"},
-    {"name": "build_templates.py", "purpose": "Regenerates tokens.css + 7 templates from tokens + layout spec"},
-    {"name": "tools/render_all.py", "purpose": "Headless Chrome render harness: 24 screenshots + geometry reports"},
-    {"name": "evidence/stress/", "purpose": "14 stress renders (10/30-char titles) with geometry JSON"},
-    {"name": "evidence/variants/", "purpose": "3 variant-proof renders"},
-    {"name": "evidence/samples/", "purpose": "7 fictional-event sample export PNGs"},
-    {"name": "evidence/geo_reports.json", "purpose": "All raw geometry reports"},
-    {"name": "usage_guide.md", "purpose": "One-page usage guide: editable/locked, crop rules, export formats"},
-    {"name": "version_register.json", "purpose": "Semver register with source_uri + sha256 (template + sample)"},
-    {"name": "verify_gates.py", "purpose": "8 automated acceptance gates"},
-    {"name": "verification_log.md", "purpose": "Real run outputs with environment"},
-    {"name": "README.md", "purpose": "Package overview + AC mapping + documented deviations"}
-  ],
-  "checks": {
-    "templates": 7,
-    "raw_hex_in_templates": 0,
-    "dtcg_tokens": "15 color variables + 28 typography styles",
-    "stress_runs": "14/14 pass (10-char and 30-char titles, zero overflow/overlap)",
-    "badge_variants": "3 per template, 28 variant-proof renders",
-    "badge_contrast_min": "6.85:1 (WCAG 1.4.3 >= 4.5:1)",
-    "sample_exports": 7,
-    "qr_slot_min_edge": ">=200px (all QR-bearing templates)",
-    "verify_gates": "8/8 pass (see verification_log.md)"
+ "package": "event-poster-cover-template-revision",
+ "pid": 2128,
+ "ticket": "S6-BRAND-004",
+ "design_only": true,
+ "fictional_only": true,
+ "client_name_included": false,
+ "delivery_form": "open-format source files + variable collection (client supplies Figma access at handoff per accepted scope; brief allows source files) [REWORK V1.1: delivered as an actual Figma file - BP-2128 Brand Component Library.fig (7 component sets x 3 variants 公开/会员专享/闭门会, variables bound, renders + build report pages); the open-format sources remain as the spec baseline.]",
+ "files": [
+  {
+   "name": "tokens/tokens.json",
+   "purpose": "W3C DTCG design tokens: colors + typography (single hex source)"
+  },
+  {
+   "name": "tokens/tokens.css",
+   "purpose": "Generated CSS variable collection (43 variables)"
+  },
+  {
+   "name": "templates/poster_vertical_1080x1920.html",
+   "purpose": "Vertical event poster template"
+  },
+  {
+   "name": "templates/poster_square_1080x1080.html",
+   "purpose": "Square event poster template"
+  },
+  {
+   "name": "templates/poster_horizontal_1920x1080.html",
+   "purpose": "Horizontal event poster template"
+  },
+  {
+   "name": "templates/oa_cover_first_900x383.html",
+   "purpose": "Official Account first-image template"
+  },
+  {
+   "name": "templates/oa_cover_second_200x200.html",
+   "purpose": "Official Account second-image (thumbnail) template"
+  },
+  {
+   "name": "templates/mp_cover_750x420.html",
+   "purpose": "Mini-program event cover template"
+  },
+  {
+   "name": "templates/podcast_cover_3000x3000.html",
+   "purpose": "Founder podcast episode cover template"
+  },
+  {
+   "name": "templates/_badge_labels.json",
+   "purpose": "Badge component variant property table (public/member-only/closed-door)"
+  },
+  {
+   "name": "build_templates.py",
+   "purpose": "Regenerates tokens.css + 7 templates from tokens + layout spec"
+  },
+  {
+   "name": "tools/render_all.py",
+   "purpose": "Headless Chrome render harness: 24 screenshots + geometry reports"
+  },
+  {
+   "name": "evidence/stress/",
+   "purpose": "14 stress renders (10/30-char titles) with geometry JSON"
+  },
+  {
+   "name": "evidence/variants/",
+   "purpose": "3 variant-proof renders"
+  },
+  {
+   "name": "evidence/samples/",
+   "purpose": "7 fictional-event sample export PNGs"
+  },
+  {
+   "name": "evidence/geo_reports.json",
+   "purpose": "All raw geometry reports"
+  },
+  {
+   "name": "usage_guide.md",
+   "purpose": "One-page usage guide: editable/locked, crop rules, export formats"
+  },
+  {
+   "name": "version_register.json",
+   "purpose": "Semver register with source_uri + sha256 (template + sample)"
+  },
+  {
+   "name": "verify_gates.py",
+   "purpose": "8 automated acceptance gates"
+  },
+  {
+   "name": "verification_log.md",
+   "purpose": "Real run outputs with environment"
+  },
+  {
+   "name": "README.md",
+   "purpose": "Package overview + AC mapping + documented deviations"
   }
+ ],
+ "checks": {
+  "templates": 7,
+  "raw_hex_in_templates": 0,
+  "dtcg_tokens": "15 color variables + 28 typography styles",
+  "stress_runs": "14/14 pass (10-char and 30-char titles, zero overflow/overlap)",
+  "badge_variants": "3 per template, 28 variant-proof renders",
+  "badge_contrast_min": "6.85:1 (WCAG 1.4.3 >= 4.5:1)",
+  "sample_exports": 7,
+  "qr_slot_min_edge": ">=200px (all QR-bearing templates)",
+  "verify_gates": "8/8 pass (see verification_log.md)"
+ }
 }

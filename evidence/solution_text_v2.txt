@@ -1,0 +1,32 @@
+Rework delivery for [S6-BRAND-004] Event Poster and Official Account Article Cover Template Revision (7 templates) — the requested Figma component library is now delivered as an actual Figma file.
+
+Public repo (anonymously retrievable, every file named below is in it):
+https://github.com/Michaelyi07/event-visual-template-suite
+Commit: d3a58a6 (branch main) — rework commit on top of 183721c; the previous HTML/tokens/stress/sample package is kept unchanged as the spec & comparison baseline, per your note.
+
+DELIVERED: BP-2128 Brand Component Library.fig (6.1 MB, at the repo root). Open it directly in Figma — no third-party importer involved. What is inside, point by point against the rework request:
+
+1. 7 component sets, one per template, named exactly after the order's canvases:
+   poster_vertical_1080x1920, poster_square_1080x1080, poster_horizontal_1920x1080, oa_cover_first_900x383, oa_cover_second_200x200, mp_cover_750x420, podcast_cover_3000x3000.
+
+2. Colors bound to Figma variables (AC1): a "Brand Tokens" collection holds 15 color variables (color/brand/primary/700 … color/badge/closed-door/*). Every solid fill and gradient stop in all 7 sets is bound to these variables via setBoundVariableForPaint / VARIABLE_ALIAS aliases — the Build Report page in the file records the final build state: "FINAL done, errors=0" (0 build errors across all 21 variants).
+
+3. Text bound to revised text styles (AC1): 27 text styles (display-*, subtitle-*, meta-*, badge-*, logo-*, caption) applied to every text node via setTextStyleIdAsync; raw hex 0 and literal font-family 0 in the build script — colors and fonts resolve only through the variables/styles, same single hex source as tokens.json.
+
+4. Text areas use Auto Layout: title-wrap and subtitle-wrap are vertical auto-layout frames (with the 10/30-char line-clamp behavior), badge, qr and logo rows are horizontal auto-layout rows anchored to their corner zones.
+
+5. Event type as a component variant property (AC3): each set exposes the property event_type with exactly three values — 公开 / 会员专享 / 闭门会 — three component variants per set (21 total). Switching the variant swaps the badge text and its text/background color pair together, from the color.badge.* variables; contrast (computed from token values): 公开 7.13:1, 会员专享 6.85:1, 闭门会 14.68:1 (WCAG 1.4.3 >= 4.5:1).
+
+6. Variant renders page in the file: "Variant Renders" holds 21 renders (every variant of every set, down-scaled for file size) so the badges can be reviewed without switching anything.
+
+Evidence kept as the baseline (unchanged from the first delivery, per your note): evidence/stress/ (14 headless-Chrome renders: every template x {10-char title, 30-char title + 40-char subtitle} with zero overflow and zero overlap, per-render geometry JSON), evidence/samples/ (7 fictional sample exports, sha256 in version_register.json), tokens/tokens.json (W3C DTCG), templates/*.html, build_templates.py, verify_gates.py (8 gates), verification_log.md, usage_guide.md.
+
+Two notes you asked to be carried over:
+- oa_cover_second_200x200: still no subtitle layer and no QR slot (a 200 px QR cannot fit a 200 px canvas; the thumbnail links to the detail page; badge font 14 px as the thumbnail exception). The exception and its rationale stay in usage_guide.md and README (Documented deviations).
+- evidence/variants holds exactly 14 files (7 templates x {member-only, closed-door}); the public variant is exercised by every stress render. The earlier "28" in the README was a miscount and is corrected to 14 in this commit; the tokens.json typography count is likewise corrected to 27 in the README (the locked first-delivery text still says 28 — the repo HEAD is authoritative).
+
+Verification you can run without logging in:
+- Download the repo at commit d3a58a6 and open BP-2128 Brand Component Library.fig in Figma: select any set and switch event_type in the right panel — the badge swaps text and colors; open the Variables panel to see the Brand Tokens collection (15 variables); open the Build Report page for the build log (FINAL done, errors=0); open Variant Renders for the 21 variant renders.
+- G2/G3/G4/G5/G6 gates on the HTML baseline: python verify_gates.py (exit 0), commands and raw outputs recorded in verification_log.md.
+
+Scope unchanged: $80 flat, one-time, no recurring fee; fictional data only; no client name; the two documented deviations stay as accepted in your rework note.
