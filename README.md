@@ -2,6 +2,10 @@
 
 Template revision package for a business member space platform's operational visuals: 3 event poster sizes, Official Account first/second images, mini-program event cover, founder podcast episode cover. Design-source package — every color and font resolves to a named variable (W3C DTCG tokens); no raw hex inside any template. All data fictional; no client name.
 
+## Figma component library (V1.1, the actual .fig)
+
+`BP-2128 Brand Component Library.fig` (6.1 MB) is the real Figma file this package describes: 7 component sets × 3 variants (`event_type = public / member-only / closed-door`), a `Brand Tokens` collection with 15 color variables (values set via `setValueForMode`), 27 text styles, solid fills and gradient stops bound to the variables, a Variant Renders page (21 down-scaled renders of every variant) and a Build Report page (final gate output: `FINAL done, errors=0`). Open it directly in Figma — no plugin import step needed. The HTML sources and DTCG tokens remain the regeneration path (`build_templates.py`); the .fig is the handoff artifact.
+
 ## Why source files instead of a Figma link
 
 The order's dependency note allows stubs/mocks for dependencies, and per the accepted scope the client supplies Figma access at handoff. This package therefore ships the templates as exact-size, Figma-importable source files plus the full variable collection:
